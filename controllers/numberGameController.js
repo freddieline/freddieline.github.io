@@ -195,7 +195,6 @@ routerApp.controller('numberGameController', function($scope, $http) {
 
             if(gridId!="demo"){
                 $scope.score = $scope.difficulty["number_game_"+String(gridId)] - $scope.numberOfMoves;
-                console.log("score!!"+$scope.score);
                 localStorage.setItem("number_game_"+String(gridId), $scope.score);
             }
             if(gridId==3){
