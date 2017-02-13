@@ -1,0 +1,82 @@
+<div id="initial">
+	<div class="panel">
+			
+			<table id="leftButtons" cellspacing="8">
+				<tr>
+					<td></td>
+				</tr>
+				<tr class="buffer">
+				</tr>
+				<tr>
+					<td><button ng-click="left1Click()">←</button></td>
+				</tr>
+				<tr>
+					<td><button ng-click="left2Click()">←</button></td>
+				</tr>
+				<tr>
+					<td><button ng-click="left3Click()">←</button></td>
+				</tr>
+			</table>
+
+			<table id="grid1">
+				<tr >
+					<td><button ng-click="up1Click()">↑</button></td>
+					<td><button ng-click="up2Click()">↑</button></td>
+					<td><button ng-click="up3Click()">↑</button></td>
+				</tr>
+				<tr class="buffer">
+				</tr>
+			  	<tr id={{y.rowId}} ng-repeat="y in number_game_1.jumbled">
+			  		<td tabindex="{{y.rowId}}{{x.id}}" id="{{y.rowId}}{{x.id}}" ng-repeat="x in y.rowValues"><div class="cell">{{x.bcolor}}</div></td>
+			  	</tr>
+			  	<tr class="buffer">
+				</tr>
+			  	<tr>
+			  		<td><button ng-click="down1Click()">↓</button></td>
+			  		<td><button ng-click="down2Click()">↓</button></td>
+			  		<td><button ng-click="down3Click()">↓</button></td>
+			  	</tr>
+			</table>
+			<table id="rightButtons">
+				<tr>
+					<td></td>
+				</tr>
+				<tr class="buffer">
+				</tr>
+				<tr>
+					<td><button ng-click="right1Click()">→</button></td>
+				</tr>
+				<tr>
+					<td><button ng-click="right2Click()">→</button></td>
+				</tr>
+				<tr>
+					<td><button ng-click="right3Click()">→</button></td>
+				</tr>
+			</table>
+			<div id="grid2">
+				<div id="title__exercise">
+					Exercise: <span id="gridId">1</span>
+				</div>
+				<table  cellspacing="8">		
+				  <tr valign="top" class="nborder" id={{y.rowId}} ng-repeat="y in number_game_1.answer">
+				  	<td tabindex="a{{y.rowId}}{{x.id}}" id="a{{y.rowId}}{{x.id}}" ng-repeat="x in y.rowValues"><div class="cell">{{x.bcolor}}</div></td>
+				  </tr>
+				</table>
+				<div id="title__num-of-moves">
+				Number of moves: {{numberOfMoves}}
+				</div>
+			</div>
+	</div>
+</div>
+<div id="final">
+	<div class="panel">
+		You completed exercise 1 in {{numberOfMoves}} moves<br><br>
+		This scores you {{score}} points
+	</div>
+	<div class="center-container">
+		<a ui-sref="number_game_2">
+			<div class="button--big" >Start next exercise
+			</div>
+		</a>
+	</div>
+</div>

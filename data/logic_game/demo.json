@@ -1,0 +1,12 @@
+ {
+      
+        "question1":"In a horse race Hill Royal came in ahead of Trigger. Hill Royal finished after Black Beauty. Copenhagen beat  Black Beauty but finished after Bucephalus.",
+        "question2":"Where did Copenhagen finish?",
+        "answers" : [
+          {"text":"1st","correct":"false"},
+          {"text":"2nd","correct":"true"},
+          {"text":"3rd","correct":"false"},
+          {"text":"4th","correct":"false"}
+        ]
+ 
+}
