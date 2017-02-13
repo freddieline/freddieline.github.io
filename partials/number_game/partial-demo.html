@@ -1,8 +1,10 @@
 <div id="initial">
+
 	<div class="panel">
+	<p>
 	Stage 1 will test your problem solving skills.
-	</div>
-	<div class="panel" >
+	</p>
+		<br/>
 		<p>
 		Sort the sequence of numbers of the grid on the left to match the numbers of the grid on the right.
 		</p>
@@ -66,17 +68,11 @@
 				</tr>
 			</table>
 			<div id="grid2">
-				<div id="title__exercise">
-					Exercise: <span id="gridId">demo</span>
-				</div>
 				<table  cellspacing="8">		
 				  <tr valign="top" class="nborder" id={{y.rowId}} ng-repeat="y in demo.answer">
 				  	<td tabindex="a{{y.rowId}}{{x.id}}" id="a{{y.rowId}}{{x.id}}" ng-repeat="x in y.rowValues"><div class="cell">{{x.bcolor}}</div></td>
 				  </tr>
 				</table>
-				<div id="title__num-of-moves">
-				Number of moves: {{numberOfMoves}}
-				</div>
 			</div>
 	</div>
 </div>
@@ -93,3 +89,4 @@
 		</a>
 	</div>
 </div>
+<span id="gridId" style="visibility: hidden;">demo</span>

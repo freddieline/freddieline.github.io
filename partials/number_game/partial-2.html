@@ -1,5 +1,16 @@
 <div id="initial">
 	<div class="panel">
+			<span id="title__stage">
+				Stage: <span id="gridId">1</span>
+			</span>
+			<span id="title__exercise">
+				Exercise: <span id="gridId">2</span>
+			</span>
+			<span id="title__num-of-moves">
+				Number of moves: {{numberOfMoves}}
+			</span>
+	</div>
+	<div class="panel">
 			
 			<table id="leftButtons" cellspacing="8">
 				<tr>
@@ -70,8 +81,7 @@
 </div>
 <div id="final">
 	<div class="panel">
-		You completed exercise 2 in {{numberOfMoves}} moves<br><br>
-		This scores you {{score}} points
+		You completed exercise 2 in {{numberOfMoves}} moves with a score of {{score}}
 	</div>
 	<div class="center-container">
 		<a ui-sref="number_game_3">
