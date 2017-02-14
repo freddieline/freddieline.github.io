@@ -84,7 +84,7 @@ routerApp.controller('logicGameController', function($scope, $http) {
        else{
        		localStorage.setItem("logic_game_"+String(gridId), 0);
        }
-       if(gridId=="3"){
+       if(gridId=="5"){
        		console.log("final");
        		document.getElementById('initial').style.display="none";
 	        document.getElementById('final').style.display="block";
