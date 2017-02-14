@@ -75,7 +75,6 @@ routerApp.controller('logicGameController', function($scope, $http) {
         $scope.logic_game_5 = response.statusText;
     });
 
-
   	$scope.answer= function(e){
        console.log("click"+e.target.id);
        var gridId = document.getElementById("gridId").innerText;
