@@ -9,7 +9,7 @@ routerApp.controller('logicGameController', function($scope, $http) {
 	console.log(localStorage.getItem("logic_game_3"));
 	console.log(localStorage.getItem("logic_game_4"));
 	console.log(localStorage.getItem("logic_game_5"));
-
+	console.log(localStorage.getItem("number_game_total_score"));
       $http({
         method : "GET",
         url : "data/logic_game/demo.json"
