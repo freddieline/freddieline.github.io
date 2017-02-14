@@ -1,0 +1,11 @@
+ {
+      
+        "question1":"Athos, Portos and Aramis live in three adjoining houses. Aramis has a black cat called d'Artagnan, Portos has a white dog whereas Athos has a red herring. Portos has a neighbour with a red door. The owner of a four legged animal has a blue door. Either a feline or fishy owner has a green door. Aramis and Portos are not neighbours.",
+        "question2":"Whose door is red?",
+        "answers" : [
+          {"text":"Portos","correct":"false"},
+          {"text":"Athos","correct":"true"},
+          {"text":"Aramis","correct":"false"}
+        ]
+ 
+}

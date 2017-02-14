@@ -29,6 +29,7 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
         })
         
         // NUMBER GAMES VIEWS =================================
+        
         .state('number_game_demo', {
           url: '/number_game_demo',
           templateUrl: 'partials/number_game/partial-demo.html',
@@ -54,7 +55,9 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
           controller:'numberGameController'
               
         })
-         // LOGIC GAMES VIEWS =================================
+        
+        // LOGIC GAMES VIEWS =================================
+        
         .state('logic_game_demo', {
             url: '/logic_game_demo',
             templateUrl: 'partials/logic_game/partial-demo.html',
@@ -74,6 +77,36 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: 'partials/logic_game/partial-incorrect-demo.html',
             controller:'logicGameController'
           
+        })
+        .state('logic_game_1', {
+            url: '/logic_game_1',
+            templateUrl: 'partials/logic_game/partial-1.html',
+            controller:'logicGameController'
+        })
+
+        .state('logic_game_2', {
+            url: '/logic_game_2',
+            templateUrl: 'partials/logic_game/partial-2.html',
+            controller:'logicGameController'
+        })
+
+        .state('logic_game_3', {
+            url: '/logic_game_3',
+            templateUrl: 'partials/logic_game/partial-3.html',
+            controller:'logicGameController'
+        })
+
+        .state('logic_game_4', {
+            url: '/logic_game_4',
+            templateUrl: 'partials/logic_game/partial-4.html',
+            controller:'logicGameController'
+        })
+
+        .state('logic_game_5', {
+          url: '/logic_game_5',
+          templateUrl: 'partials/logic_game/partial-5.html',
+          controller:'logicGameController'
+        
         });
 });
 

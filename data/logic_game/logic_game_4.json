@@ -1,0 +1,12 @@
+ {
+      
+        "question1":"An old treasure map has the following instructions: Stand next to the black rock and face West. Walk 20 yards and then turn 90 degrees clockwise. Walk another 10 yards and then turn 45 degrees anticlockwise. Walk another 15 yards, reverse your direction and walk 5 yards back. Turn 135 degrees clockwise and walk another 10 yards.",
+        "question2":"In which direction are you now facing?",
+        "answers" : [
+          {"text":"North","correct":"false"},
+          {"text":"South","correct":"false"},
+          {"text":"East","correct":"false"},
+          {"text":"West","correct":"true"}
+        ]
+ 
+}

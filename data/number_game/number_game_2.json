@@ -1,5 +1,5 @@
-   {
-        "difficulty":40,
+{
+        "difficulty":1,
         "jumbled":[
           {
             "rowId":0,
@@ -13,17 +13,17 @@
           {
             "rowId":1,
             "rowValues":[
-              {"bcolor":"0","id":0},
+              {"bcolor":"4","id":0},
               {"bcolor":"3", "id":1},
-              {"bcolor":"4","id":2}
+              {"bcolor":"1","id":2}
             ]
           },
           {
             "rowId":2,
             "rowValues":[
-              {"bcolor":"1","id":0},
+              {"bcolor":"4","id":0},
               {"bcolor":"2", "id":1},
-              {"bcolor":"5","id":2}
+              {"bcolor":"3","id":2}
             ]
           }
         ],
@@ -31,27 +31,29 @@
           {
             "rowId":0,
             "rowValues":[
-              {"bcolor":"3","id":0},
+              {"bcolor":"1","id":0},
               {"bcolor":"4","id":1},
-              {"bcolor":"2","id":2}
+              {"bcolor":"1","id":2}
 
             ]
           },
           {
             "rowId":1,
             "rowValues":[
-              {"bcolor":"1","id":0},
+              {"bcolor":"0","id":0},
               {"bcolor":"4", "id":1},
-              {"bcolor":"0","id":2}
+              {"bcolor":"2","id":2}
             ]
           },
           {
             "rowId":2,
             "rowValues":[
-              {"bcolor":"1","id":0},
-              {"bcolor":"5", "id":1},
-              {"bcolor":"0","id":2}
+              {"bcolor":"3","id":0},
+              {"bcolor":"4", "id":1},
+              {"bcolor":"3","id":2}
             ]
           }
         ]
+ 
 }
+

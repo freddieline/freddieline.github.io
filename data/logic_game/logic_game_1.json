@@ -1,0 +1,12 @@
+ {
+      
+        "question1":"Debbie, Kimi and Michael have Ferraris. Michael also has a Reliant Robin. Jensen has a Mercedes and a Model T. Rubens also has a Mercedes. Debbie also has a Bugatti Veyron. Rubens has just bought a Toyota Prius.",
+        "question2":"Who has the fewest cars?",
+        "answers" : [
+          {"text":"Debbie","correct":"false"},
+          {"text":"Kimi","correct":"true"},
+          {"text":"Jensen","correct":"false"},
+          {"text":"Rubens","correct":"false"}
+        ]
+ 
+}

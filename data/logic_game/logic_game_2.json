@@ -1,0 +1,12 @@
+ {
+      
+        "question1":"Jensen, Lewis and Mika need to be able to run 100m in under 12.5 seconds to qualify for a championship. Lewis and Mika run faster than Jensen. Jensen's best time for the 100m is 13.1 seconds.",
+        "question2":"Which of these 4 options MUST be true:",
+        "answers" : [
+          {"text":"No one qualifies","correct":"false"},
+          {"text":"Only Lewis qualifies","correct":"false"},
+          {"text":"Jensen does not qualify","correct":"true"},
+          {"text":"No one qualifies","correct":"false"}
+        ]
+ 
+}

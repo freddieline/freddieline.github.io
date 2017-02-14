@@ -1,0 +1,12 @@
+ {
+      
+        "question1":"Hanif, Horace, Hilary and Hannah are students. Hanif and Horace speak Chinese, whereas the others speak Arabic. Horace and Hannah speak Albanian. Everyone except Hanif speaks Esperanto.",
+        "question2":"Who only speaks Arabic and Esperanto?",
+        "answers" : [
+          {"text":"Hanif","correct":"false"},
+          {"text":"Horace","correct":"false"},
+          {"text":"Hannah","correct":"false"},
+          {"text":"Hillary","correct":"true"}
+        ]
+ 
+}

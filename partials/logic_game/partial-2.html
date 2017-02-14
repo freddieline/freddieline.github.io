@@ -1,0 +1,19 @@
+<div class="panel">
+	<span id="title__stage">
+		Stage: 2
+	</span>
+	<span id="title__question">
+		Question: <span id="gridId">2</span>
+	</span>
+</div>
+<div class="panel">
+{{logic_game_2.question1}}<br/><br/>
+{{logic_game_2.question2}}
+</div>
+<div class="stretch-container">
+	<a ng-repeat="x in logic_game_2.answers" ng-click="answer($event)" ui-sref="logic_game_3"> 
+		<div id="{{x.correct}}" class="border button__logic-answers">
+			{{x.text}}
+		</div>
+	</a>
+</div>

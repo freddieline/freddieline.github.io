@@ -1,12 +1,12 @@
-routerApp.filter('logicDemoFilter', function() {
+routerApp.filter('logicGameFilter', function() {
     return function(x) {
         var url;
             console.log(x);
             if(x=="true"){
-                url="correct_logic_demo"
+                url="answer_correct()"
             }
             else{
-                url="incorrect_logic_demo"
+                url="answer_incorrect()"
             }
         return url;
     };

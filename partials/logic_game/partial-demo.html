@@ -1,13 +1,14 @@
 <div class="panel">
-	Here is an example of a question that you can expect in the logic reasoning test.
+	Stage 2 will test your logical reasoning.<br><br>
+	Here is an example of a typical question in this section.
 </div>
 <div class="panel">
 {{demo.question1}}<br/><br/>
 {{demo.question2}}
 </div>
-<div class="flex-container">
+<div class="stretch-container">
 	<a ng-repeat="x in demo.answers" ui-sref="{{ x.correct | logicDemoFilter }}">
-		<div class="panel button__logic-answers">
+		<div class="border button__logic-answers">
 			{{x.text}}
 		</div>
 	</a>

@@ -3,6 +3,13 @@ body{
 	color:#aaffcc;
 	font-family:"Andale Mono" , "Lucida Console" , Monaco, monospace;
 	font-size: 20px;
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
 }
 
 table { 
@@ -34,7 +41,7 @@ a, a:hover{
 .center-container{
 	display: flex;
 	justify-content: center;
-	margin-top:80px;
+	margin-top:70px;
 	margin-bottom:40px;
 }
 
@@ -72,12 +79,17 @@ p{
 	height:10px;
 }
 
+
 .button--big, button{
 	border:2px solid #aaffcc;
 	border-radius:8px;
 	background-color: #000000;
 	padding:20px 40px;
 	display:inline-block;
+}
+.button--big{
+	width:250px;
+	text-align: center;
 }
 
 button, .cell{
@@ -102,13 +114,9 @@ button:focus{
 }
 
 .button__logic-answers{
+	padding:20px;
 	text-align: center;
-	width:170px;
-}
-
-.button__logic-answers{
-	text-align: center;
-	width:170px;
+	width:180px;
 }
 
 #final{
@@ -116,5 +124,8 @@ button:focus{
 }
 #title__exercise, #title__num-of-moves{
 	margin-left:100px;
+}
+#title__question{
+	margin-left:200px;
 }
 

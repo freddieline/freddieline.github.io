@@ -11,7 +11,9 @@ routerApp.controller('numberGameController', function($scope, $http) {
     console.log(localStorage.getItem("number_game_1"));
     console.log(localStorage.getItem("number_game_2"));
     console.log(localStorage.getItem("number_game_3"));
-    console.log(parseInt(localStorage.getItem("number_game_1"))+parseInt(localStorage.getItem("number_game_2"))+parseInt(localStorage.getItem("number_game_3")));
+    console.log(localStorage.getItem("number_game_total_score"));
+    
+    
     $http({
         method : "GET",
         url : "data/number_game/demo.json"
@@ -199,6 +201,7 @@ routerApp.controller('numberGameController', function($scope, $http) {
             }
             if(gridId==3){
                 $scope.totalScore =  parseInt(localStorage.getItem("number_game_1"))+parseInt(localStorage.getItem("number_game_2"))+parseInt(localStorage.getItem("number_game_3"));
+                console.log(parseInt(localStorage.setItem("numer_game_total_score", $scope.totalScore)));
             }
             setTimeout(function(){ 
                 document.getElementById('initial').style.display="none";
