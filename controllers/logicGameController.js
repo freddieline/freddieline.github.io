@@ -10,6 +10,7 @@ routerApp.controller('logicGameController', function($scope, $http) {
 	console.log(localStorage.getItem("logic_game_4"));
 	console.log(localStorage.getItem("logic_game_5"));
 	console.log(localStorage.getItem("number_game_total_score"));
+
       $http({
         method : "GET",
         url : "data/logic_game/demo.json"
@@ -92,7 +93,7 @@ routerApp.controller('logicGameController', function($scope, $http) {
 		    	+ parseInt(localStorage.getItem("logic_game_4"))
 		    	+ parseInt(localStorage.getItem("logic_game_5"));
 	    	$scope.score = $scope.numberCorrect * 10;
-	    	$scope.totalScore = $scope.score + localStorage.getItem("number_game_total_score");
+	    	$scope.totalScore = $scope.score + parseInt(localStorage.getItem("number_game_total_score"));
 	    	localStorage.setItem("logic_game_total_score", $scope.score);
        }
     }
