@@ -4,8 +4,6 @@ routerApp.controller('logicGameController', function($scope, $http) {
 	$scope.numberCorrect = 0;
 	$scope.score = 0;
 	$scope.totalScore = 0;
-	console.log("refresh");
-
 	console.log(localStorage.getItem("logic_game_1"));
 	console.log(localStorage.getItem("logic_game_2"));
 	console.log(localStorage.getItem("logic_game_3"));
