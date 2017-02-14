@@ -72,7 +72,7 @@ routerApp.controller('numberGameController', function($scope, $http) {
         $scope.numberOfMoves+=1;
         checkCorrect();
     }
-     $scope.up2Click = function(){
+    $scope.up2Click = function(){
         var value;
         value = document.getElementById('01').innerHTML;
         document.getElementById('01').innerHTML = document.getElementById('11').innerHTML;
@@ -82,7 +82,7 @@ routerApp.controller('numberGameController', function($scope, $http) {
         checkCorrect();
     }
 
-     $scope.up3Click= function(){
+    $scope.up3Click= function(){
         var value;
         value = document.getElementById('02').innerHTML;
         document.getElementById('02').innerHTML = document.getElementById('12').innerHTML;
@@ -183,7 +183,6 @@ routerApp.controller('numberGameController', function($scope, $http) {
     }
 
     function checkCorrect(){
-    
         var anyFalse = false;
         for(var y = 0; y < 3 ; y++){
             for(var z = 0; z < 3 ; z++){
@@ -210,7 +209,5 @@ routerApp.controller('numberGameController', function($scope, $http) {
             
         }
     }
-
-
 
 });
