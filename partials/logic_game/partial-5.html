@@ -12,7 +12,7 @@
 	{{logic_game_5.question2}}
 	</div>
 	<div class="stretch-container">
-		<a ng-repeat="x in logic_game_5.answers" ng-click="complete($event)">
+		<a ng-repeat="x in logic_game_5.answers" ng-click="answer($event)">
 			<div id="{{x.correct}}" class="border button__logic-answers">
 				{{x.text}}
 			</div>

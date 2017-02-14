@@ -80,33 +80,25 @@ routerApp.controller('logicGameController', function($scope, $http) {
        console.log("click"+e.target.id);
        var gridId = document.getElementById("gridId").innerText;
        if(e.target.id=="true"){
-       		console.log(gridId);
        		localStorage.setItem("logic_game_"+String(gridId), 1);
-       		console.log(localStorage.getItem("logic_game_"+String(gridId)));
-
        }
        else{
-	       	console.log("false");
-	       	console.log(gridId);
        		localStorage.setItem("logic_game_"+String(gridId), 0);
        }
+       if(gridId=="3"){
+       		console.log("final");
+       		document.getElementById('initial').style.display="none";
+	        document.getElementById('final').style.display="block";
+	    	$scope.numberCorrect = parseInt(localStorage.getItem("logic_game_1"))
+		    	+ parseInt(localStorage.getItem("logic_game_2"))
+		    	+ parseInt(localStorage.getItem("logic_game_3"))
+		    	+ parseInt(localStorage.getItem("logic_game_4"))
+		    	+ parseInt(localStorage.getItem("logic_game_5"));
+	    	$scope.score = $scope.numberCorrect * 10;
+	    	$scope.totalScore = $scope.score + localStorage.getItem("number_game_total_score");
+	    	localStorage.setItem("logic_game_total_score", $scope.score);
+       }
     }
-
-    $scope.complete = function(){
-        document.getElementById('initial').style.display="none";
-        document.getElementById('final').style.display="block";
-    	$scope.numberCorrect = parseInt(localStorage.getItem("logic_game_1"))
-    	+ parseInt(localStorage.getItem("logic_game_2"))
-    	+ parseInt(localStorage.getItem("logic_game_3"))
-    	+ parseInt(localStorage.getItem("logic_game_4"))
-    	+ parseInt(localStorage.getItem("logic_game_5"));
-    	console.log("number correct"+$scope.numberCorrect);
-    	$scope.score = $scope.numberCorrect * 10;
-    	$scope.totalScore = $scope.score + localStorage.getItem("number_game_total_score");
-    	localStorage.setItem("logic_game_total_score", $scope.score);
-    } 
-
-
 
 
 });
