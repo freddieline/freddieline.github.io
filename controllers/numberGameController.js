@@ -198,9 +198,9 @@ routerApp.controller('numberGameController', function($scope, $http) {
                 $scope.score = $scope.difficulty["number_game_"+String(gridId)] - $scope.numberOfMoves;
                 localStorage.setItem("number_game_"+String(gridId), $scope.score);
             }
-            if(gridId==3){
+            if(gridId=="3"){
                 $scope.totalScore =  parseInt(localStorage.getItem("number_game_1"))+parseInt(localStorage.getItem("number_game_2"))+parseInt(localStorage.getItem("number_game_3"));
-                console.log(parseInt(localStorage.setItem("numer_game_total_score", $scope.totalScore)));
+                console.log("TT"+parseInt(localStorage.setItem("number_game_total_score", $scope.totalScore)));
             }
             setTimeout(function(){ 
                 document.getElementById('initial').style.display="none";
